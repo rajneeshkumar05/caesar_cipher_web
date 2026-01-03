@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encrypt | Caesar Cipher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>🔐 Encrypt</h1>
+
+    <form method="post">
+        <label>Plain Text</label>
+        <textarea name="text" placeholder="Enter plain text" required></textarea>
+
+        <label>Key (Shift)</label>
+        <input type="number" name="key" value="3" required>
+
+        <button type="submit">Encrypt Text</button>
+
+        <div class="result-box">
+            <label>Encrypted Output</label>
+            <textarea readonly>{{ result }}</textarea>
+        </div>
+    </form>
+
+    <div class="nav-link">
+        <a href="/decrypt">Go to Decryption →</a>
+    </div>
+</div>
+
+</body>
+</html>
+
